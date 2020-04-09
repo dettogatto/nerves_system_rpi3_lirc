@@ -44,3 +44,6 @@ dtoverlay=ramoops
 # Enable the UART (/dev/ttyAMA0) on the RPi3.
 enable_uart=1
 dtoverlay=pi3-miniuart-bt
+
+# Enable the lirc-rpi module
+dtoverlay=lirc-rpi,gpio_in_pin=23,gpio_out_pin=22

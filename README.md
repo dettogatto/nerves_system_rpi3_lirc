@@ -1,3 +1,9 @@
+`/dev/lirc0` is receiver, `/dev/lirc1` is transmitter
+Pins are GPIO 17 for input and GPIO 18 for output
+To test in ssh:
+- use `ir-ctl -r -1 > /tmp/foo.txt` to save an input
+- use `ir-ctl -s /tmp/foo.txt` to send saved signal
+
 # Raspberry Pi 3 Model B / B+
 
 [![CircleCI](https://circleci.com/gh/nerves-project/nerves_system_rpi3.svg?style=svg)](https://circleci.com/gh/nerves-project/nerves_system_rpi3)

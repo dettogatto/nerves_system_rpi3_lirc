@@ -2,7 +2,7 @@
 Pins are GPIO 17 for input and GPIO 18 for output
 To test in ssh:
 - use `ir-ctl -r -1 > /tmp/foo.txt` to save an input
-- use `ir-ctl -s /tmp/foo.txt` to send saved signal
+- use `ir-ctl -s /tmp/foo.txt -d /dev/lirc1` to send saved signal
 
 # Raspberry Pi 3 Model B / B+
 
@@ -25,12 +25,10 @@ This is the base Nerves System configuration for the Raspberry Pi 3 Model B.
 | ADC                  | No                                                          |
 | PWM                  | Yes, but no Elixir support                                  |
 | UART                 | 1 available - `ttyAMA0`                                     |
-| Display              | HDMI or 7" RPi Touchscreen                                  |
 | Camera               | Yes - via rpi-userland                                      |
 | Ethernet             | Yes                                                         |
 | WiFi                 | Yes - Nerves.Network                                        |
 | Bluetooth            | Watch [Harald](https://github.com/verypossible/harald)      |
-| Audio                | HDMI/Stereo out                                             |
 
 ## Using
 
